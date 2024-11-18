@@ -1,0 +1,12 @@
+@use "./partials/newsVar.scss" as nw;
+
+.news-content {
+  width: 100%;
+  max-width: 500px;
+  color: nw.$text-color;
+  background-color: nw.$bg-color;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+

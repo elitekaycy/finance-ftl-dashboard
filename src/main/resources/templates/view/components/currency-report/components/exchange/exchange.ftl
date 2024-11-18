@@ -15,7 +15,7 @@
     <thead>
         <tr>
             <th class="icon-column">
-               <i class="fa-light fa-file-lines cr-fa-dark"></i>
+                 <i class="fab fa-stack-exchange"></i>
             </th>
             <th>Asset</th>
             <th>Chain</th>
@@ -27,7 +27,7 @@
         <#list assets as asset>
         <tr>
             <td class="icon-column">
-               <i class="fa-light fa-file-lines cr-fa-dark"></i>
+                 <i class="fab fa-stack-exchange"></i>
             </td>
             <td>${asset.Asset}</td>
             <td>${asset.Chain}</td>

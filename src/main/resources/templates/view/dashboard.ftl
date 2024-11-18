@@ -11,7 +11,9 @@
     <title>dashboard</title>
   </head>
   <body> 
-  <!-- <@Sidebar.sidebar currentPage=currentPage /> -->
-  <@CurrencyReport.report />
+  <div class="layout">
+    <@Sidebar.sidebar currentPage=currentPage />
+    <@CurrencyReport.report />
+  </div>
   </body>
 </html>

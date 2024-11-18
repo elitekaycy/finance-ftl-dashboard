@@ -1,5 +1,6 @@
 @use "./partials/currency-reportVar.scss" as cr;
 @use "./exchange/exchange.scss";
+@use "./news/news.scss";
 
 .currency-content {
   color: cr.$cr-text-color;

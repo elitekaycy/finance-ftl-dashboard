@@ -7,3 +7,18 @@ body {
   font-family: "Montserrat", sans-serif;
   color: white;
 }
+
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.content {
+
+  color: black;
+}
+
+
+
