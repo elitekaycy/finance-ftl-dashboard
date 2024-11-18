@@ -1,0 +1,63 @@
+@use "./partials/exchangeVar.scss" as crx;
+
+.cr-exchange {
+  width: 100%;
+  color: crx.$cr-x-text-color;
+  background-color: crx.$cr-x-bg-color;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+  .cr-exchange-header {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 5px;
+  }
+
+  .cr-exchange-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+
+    th,
+    td {
+      text-align: left;
+      padding: 25px 15px;
+    }
+
+    th {
+      color: crx.$cr-x-th-color;
+      font-weight: 500;
+      font-size: 14px;
+      border-bottom: 1px solid crx.$cr-x-row-divider;
+    }
+
+    .cr-fa-dark {
+      color: crx.$cr-x-th-color;
+    }
+
+    .icon-column {
+      width: auto;
+      text-align: center;
+      padding: 10px;
+      color: crx.$cr-x-th-color;
+    }
+
+    tr {
+      border-bottom: 1px solid crx.$cr-x-row-divider;
+
+      &:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      &:hover {
+        background-color: crx.$cr-x-hover-bg;
+      }
+    }
+
+    td {
+      font-size: 14px;
+      color: #333;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@use "./partials/currency-reportVar.scss" as cr;
+@use "./exchange/exchange.scss";
+
+.currency-content {
+  color: cr.$cr-text-color;
+  background-color: cr.$cr-bg-color;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
