@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.finance.ftl.service.asset.impl.AssetServiceImpl;
+
 @Controller
 @RequestMapping("/")
 public class FtlController {
@@ -20,6 +22,7 @@ public class FtlController {
     Map<String, Object> dashboardModel = new HashMap<>();
 
     dashboardModel.put("currentPage", currentPage);
+    dashboardModel.put("assets", AssetServiceImpl.getAssets().block());
 
     ModelAndView dashboardView = new ModelAndView("dashboard");
     dashboardView.addAllObjects(dashboardModel);

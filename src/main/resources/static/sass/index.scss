@@ -14,3 +14,18 @@ body {
   flex-direction: row;
   width: 100%;
 }
+
+.overview-content {
+  color: black;
+  background-color: #f8f5f0;
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  height: 100vh;
+  flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}

@@ -22,5 +22,5 @@
         </#list>
         </ul>
       </div>
-    <div>
+    </div>
 </#macro>

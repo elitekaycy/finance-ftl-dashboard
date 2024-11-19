@@ -1,12 +1,14 @@
-<#macro page>
+<#macro page assets>
 
-<#assign assets = [
+<!-- <#assign assets = [
   {"Asset": "BUSD Token", "Chain": "BNB Chain", "Price": 1.0, "Balance": 30.0},
   {"Asset": "KSM", "Chain": "BNB Chain", "Price": 52.38, "Balance": 0.000818},
   {"Asset": "Tether USD", "Chain": "BNB Chain", "Price": 1.0, "Balance": 675.0},
   {"Asset": "Solana", "Chain": "BNB Chain", "Price": 130.02, "Balance": 0.00805},
   {"Asset": "BTC", "Chain": "BNB Chain", "Price": 66612.02, "Balance": 0.026223916}
-] />
+] /> -->
+
+<#assign assets=assets />
 
   <div class="cr-exchange">
   <div class="cr-exchange-header">Assets</div>
@@ -31,8 +33,8 @@
             </td>
             <td>${asset.Asset}</td>
             <td>${asset.Chain}</td>
-            <td>${asset.Price?string("0.##")}</td>
-            <td>${asset.Balance?string("0.#######")}</td>
+            <td>${asset.Price}</td>
+            <td>${asset.Balance}</td>
         </tr>
         </#list>
     </tbody>

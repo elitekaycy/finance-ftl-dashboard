@@ -14,9 +14,11 @@
   <div class="layout">
     <@Sidebar.sidebar currentPage=currentPage />
     <#if currentPage != "currency-report">
-      <div> hello world </div>
+      <div class="overview-content"> 
+        hello world 
+      </div>
       <#else>
-       <@CurrencyReport.report />
+       <@CurrencyReport.report assets=assets/>
     </#if>
   </div>
   </body>
