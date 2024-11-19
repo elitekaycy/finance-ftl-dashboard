@@ -53,6 +53,9 @@
   gap: 40px;
   overflow-y: auto;
   box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .sidebar .sidebar-header {
   padding: 20px;
@@ -130,6 +133,16 @@
   color: #333;
 }
 
+.chart-content {
+  color: #201f24;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  min-height: 500px;
+}
+
 .news-content {
   width: 100%;
   max-width: 500px;
@@ -143,27 +156,29 @@
 .currency-content {
   color: #201f24;
   background-color: #f8f5f0;
-  width: 100%;
-  height: 100%;
+  margin-left: 220px;
+  width: calc(100% - 220px);
+  height: 100vh;
   flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
   padding: 20px;
   box-sizing: border-box;
+  overflow-y: auto;
 }
 
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   color: white;
+  background-color: #f8f5f0;
 }
 
 .layout {
   display: flex;
   flex-direction: row;
-  height: 100vh;
-}
-
-.content {
-  color: black;
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

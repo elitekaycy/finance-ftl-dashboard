@@ -1,13 +1,19 @@
 @use "./partials/currency-reportVar.scss" as cr;
 @use "./exchange/exchange.scss";
+@use "./chart/chart.scss";
 @use "./news/news.scss";
 
 .currency-content {
   color: cr.$cr-text-color;
   background-color: cr.$cr-bg-color;
-  width: 100%;
-  height: 100%;
+  margin-left: cr.$sidebar-width;
+  width: calc(100% - cr.$sidebar-width);
+  height: 100vh;
   flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
   padding: 20px;
   box-sizing: border-box;
+  overflow-y: auto;
 }

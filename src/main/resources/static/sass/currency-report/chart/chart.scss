@@ -1,0 +1,11 @@
+@use "./partials/chartVar.scss" as cv;
+
+.chart-content {
+  color: cv.$text-color;
+  background-color: cv.$bg-color;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  min-height: 500px;
+}
