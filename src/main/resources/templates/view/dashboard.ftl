@@ -1,6 +1,7 @@
 <#import "/components/sidebar/sidebar.ftl" as Sidebar />
 <#import "/components/currency-report/currency-report.ftl" as CurrencyReport />
 <#assign cssPath = "/public/css/index.css" />
+<#import "./components/overview/overview.ftl" as Overview />
 
 <html lang="en">
   <head>
@@ -15,7 +16,7 @@
     <@Sidebar.sidebar currentPage=currentPage />
     <#if currentPage != "currency-report">
       <div class="overview-content"> 
-        hello world 
+        <@Overview.page/>
       </div>
       <#else>
        <@CurrencyReport.report assets=assets/>
