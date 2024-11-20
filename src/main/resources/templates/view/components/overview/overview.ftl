@@ -1,0 +1,120 @@
+<#assign avatarImgPath = "public/img/image-avatar.png" />
+<#macro page>
+    <div style="background-color: #f8f5f0; display: flex; flex-direction: column; width: 80%"  id="main-page">
+      <h1>Overview</h1>
+      <div id="info-section" style="display: flex; justify-content: space-evenly; height: 20%; margin: 10px">
+        <div class="info-display-pane">
+          <p id="title">Current Balance</p>
+          <p id="value">$4,836.00</p>
+        </div>
+        <div class="info-display-pane">
+          <p id="title">Income</p>
+          <p id="value">$3,814.00</p>
+        </div>
+        <div class="info-display-pane">
+          <p id="title">Expenses</p>
+          <p id="value">$1,700.50</p>
+        </div>
+      </div>
+      <div id="second-section" style="display: flex; height: 80%;">
+        <div id="user-list-pane">
+          <h3 style="margin: 20px 0 10px 30px">List of users</h3>
+          <div id="user-list">
+            <div id="list-card" style="display: flex; border-bottom: 1px solid #d3d3d3; margin: 10px 30px 5px 25px; padding: 10px 0; height: 10%; justify-content: space-between">
+              <div id="user-profile-details" style="display: flex; justify-content: flex-start; align-items: center; width: 50%; padding-left: 5px">
+                <img style="border: 1px solid #000000; border-radius: 50%" src="${avatarImgPath}" alt="" width="10%" height="50%">
+                <span style="margin-left: 10px">Emma Richardson</span>
+              </div>
+              <div style="width: 30%; display: flex; flex-direction: column; align-items: flex-end; justify-content: center; padding-right: 5px">
+                <span style="margin-bottom: 5px; color: #00fa9a; font-size: large">+$75.50</span>
+                <span>19 Aug 2024</span>
+              </div>
+            </div>
+            <div id="list-card" style="display: flex; border-bottom: 1px solid #d3d3d3; margin: 10px 30px 5px 25px; padding: 10px 0; height: 10%; justify-content: space-between">
+              <div id="user-profile-details" style="display: flex; justify-content: flex-start; align-items: center; width: 50%; padding-left: 5px">
+                <img style="border: 1px solid #000000; border-radius: 50%" src="${avatarImgPath}" alt="" width="10%" height="50%">
+                <span style="margin-left: 10px">Emma Richardson</span>
+              </div>
+              <div style="width: 30%; display: flex; flex-direction: column; align-items: flex-end; justify-content: center; padding-right: 5px">
+                <span style="margin-bottom: 5px; color: #00fa9a; font-size: large">+$75.50</span>
+                <span>19 Aug 2024</span>
+              </div>
+            </div>
+            <div id="list-card" style="display: flex; border-bottom: 1px solid #d3d3d3; margin: 10px 30px 5px 25px; padding: 10px 0; height: 10%; justify-content: space-between">
+              <div id="user-profile-details" style="display: flex; justify-content: flex-start; align-items: center; width: 50%; padding-left: 5px">
+                <img style="border: 1px solid #000000; border-radius: 50%" src="${avatarImgPath}" alt="" width="10%" height="50%">
+                <span style="margin-left: 10px">Emma Richardson</span>
+              </div>
+              <div style="width: 30%; display: flex; flex-direction: column; align-items: flex-end; justify-content: center; padding-right: 5px">
+                <span style="margin-bottom: 5px; color: #00fa9a; font-size: large">+$75.50</span>
+                <span>19 Aug 2024</span>
+              </div>
+            </div>
+            <div id="list-card" style="display: flex; border-bottom: 1px solid #d3d3d3; margin: 10px 30px 5px 25px; padding: 10px 0; height: 10%; justify-content: space-between">
+              <div id="user-profile-details" style="display: flex; justify-content: flex-start; align-items: center; width: 50%; padding-left: 5px">
+                <img style="border: 1px solid #000000; border-radius: 50%" src="${avatarImgPath}" alt="" width="10%" height="50%">
+                <span style="margin-left: 10px">Emma Richardson</span>
+              </div>
+              <div style="width: 30%; display: flex; flex-direction: column; align-items: flex-end; justify-content: center; padding-right: 5px">
+                <span style="margin-bottom: 5px; color: #00fa9a; font-size: large">+$75.50</span>
+                <span>19 Aug 2024</span>
+              </div>
+            </div>
+            <div id="list-card" style="display: flex; border-bottom: 1px solid #d3d3d3; margin: 10px 30px 5px 25px; padding: 10px 0; height: 10%; justify-content: space-between">
+              <div id="user-profile-details" style="display: flex; justify-content: flex-start; align-items: center; width: 50%; padding-left: 5px">
+                <img style="border: 1px solid #000000; border-radius: 50%" src="${avatarImgPath}" alt="" width="10%" height="50%">
+                <span style="margin-left: 10px">Emma Richardson</span>
+              </div>
+              <div style="width: 30%; display: flex; flex-direction: column; align-items: flex-end; justify-content: center; padding-right: 5px">
+                <span style="margin-bottom: 5px; color: #00fa9a; font-size: large">+$75.50</span>
+                <span>19 Aug 2024</span>
+              </div>
+            </div>
+            <div id="list-card" style="display: flex; border-bottom: 1px solid #d3d3d3; margin: 10px 30px 5px 25px; padding: 10px 0; height: 10%; justify-content: space-between">
+              <div id="user-profile-details" style="display: flex; justify-content: flex-start; align-items: center; width: 50%; padding-left: 5px">
+                <img style="border: 1px solid #000000; border-radius: 50%" src="${avatarImgPath}" alt="" width="10%" height="50%">
+                <span style="margin-left: 10px">Emma Richardson</span>
+              </div>
+              <div style="width: 30%; display: flex; flex-direction: column; align-items: flex-end; justify-content: center; padding-right: 5px">
+                <span style="margin-bottom: 5px; color: #00fa9a; font-size: large">+$75.50</span>
+                <span>19 Aug 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="converter-container">
+          <div class="amount-input">
+            <label for="amount">Amount</label>
+            <div class="amount-controls">
+              <button class="minus-btn">-</button>
+              <input type="number" id="amount" value="100" />
+              <button class="plus-btn">+</button>
+            </div>
+          </div>
+
+          <div class="currency-select">
+            <div class="select-box">
+              <label for="coin">Select Coin</label>
+              <select id="coin">
+                <option>Bitcoin BTC</option>
+              </select>
+            </div>
+            <div class="swap-icon">
+              <span>&#8646;</span>
+            </div>
+            <div class="select-box">
+              <label for="currency">Select Currency</label>
+              <select id="currency">
+                <option>US Dollar USD</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="conversion-result">
+            <p><strong>100 BTC = $6,852,278</strong></p>
+            <span>Last updated at 05:55 AM UTC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+</#macro>
