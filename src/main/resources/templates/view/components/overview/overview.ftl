@@ -1,6 +1,6 @@
 <#assign avatarImgPath = "public/img/image-avatar.png" />
 <#macro page users>
-    <div style="background-color: #f8f5f0; display: flex; flex-direction: column; width: 80%"  id="main-page">
+    <div style="background-color: #f8f5f0; color: #000000; display: flex; flex-direction: column; width: 100%"  id="main-page">
       <h1 style="margin-left: 30px">Overview</h1>
       <div id="info-section" style="display: flex; justify-content: space-evenly; height: 20%; margin: 10px">
         <div class="info-display-pane">
@@ -59,30 +59,36 @@
             <label for="amount">Amount</label>
             <div class="amount-controls">
               <button class="minus-btn">-</button>
-              <input type="number" id="amount" value="100" />
+              <input type="number" id="amount" />
               <button class="plus-btn">+</button>
             </div>
           </div>
 
           <div class="currency-select">
             <div class="select-box">
-              <label for="coin">Select Coin</label>
-              <select id="coin">
-                <option>Bitcoin BTC</option>
+              <label for="currency-from">Select From</label>
+              <select id="currency-from">
+                <option value="USD">US Dollar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="JPY">Japanese Yen (JPY)</option>
               </select>
             </div>
             <div class="swap-icon">
               <span>&#8646;</span>
             </div>
             <div class="select-box">
-              <label for="currency">Select Currency</label>
-              <select id="currency">
-                <option>US Dollar USD</option>
+              <label for="currency-to">Select To</label>
+              <select id="currency-to" >
+                <option value="USD">US Dollar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="JPY">Japanese Yen (JPY)</option>
               </select>
             </div>
           </div>
-
-          <div class="conversion-result">
+          <div>
+            <button id="btn-convert">Convert</button>
+          </div>
+          <div id="result" class="conversion-result">
             <p><strong>100 BTC = $6,852,278</strong></p>
             <span>Last updated at 05:55 AM UTC</span>
           </div>
