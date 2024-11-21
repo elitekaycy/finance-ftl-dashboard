@@ -1,7 +1,7 @@
 <#assign avatarImgPath = "public/img/image-avatar.png" />
 <#macro page users>
     <div style="background-color: #f8f5f0; display: flex; flex-direction: column; width: 80%"  id="main-page">
-      <h1>Overview</h1>
+      <h1 style="margin-left: 30px">Overview</h1>
       <div id="info-section" style="display: flex; justify-content: space-evenly; height: 20%; margin: 10px">
         <div class="info-display-pane">
           <p id="title">Current Balance</p>
