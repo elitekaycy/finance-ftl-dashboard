@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>dashboard</title>
   </head>
+<<<<<<< HEAD
   <body> 
   <div class="layout">
     <@Sidebar.sidebar currentPage=currentPage />
     <#if currentPage != "currency-report">
       <div class="overview-content"> 
-        <@Overview.page/>
+        <@Overview.page users=users />
       </div>
       <#else>
        <@CurrencyReport.report assets=assets/>

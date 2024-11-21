@@ -209,7 +209,8 @@
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   padding: 20px;
-  width: 400px;
+  width: 45%;
+  height: 40%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .converter-container .amount-input {
@@ -239,6 +240,7 @@
   height: 40px;
   margin: 0 10px;
   text-align: center;
+  font-size: 30px;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
 }
@@ -267,12 +269,14 @@
 .converter-container .currency-select .swap-icon {
   font-size: 20px;
   color: #333333;
+  padding-top: 20px;
 }
 .converter-container .conversion-result {
   background-color: #d4fecd;
   padding: 15px;
   border-radius: 5px;
   text-align: center;
+  margin-top: 10px;
 }
 .converter-container .conversion-result p {
   font-size: 16px;

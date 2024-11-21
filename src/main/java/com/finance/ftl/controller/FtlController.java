@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.finance.ftl.service.asset.impl.AssetServiceImpl;
+import com.finance.ftl.service.overview.users.impl.UserServiceImpl;
 
 @Controller
 @RequestMapping("/")
@@ -23,10 +24,10 @@ public class FtlController {
 
     dashboardModel.put("currentPage", currentPage);
     dashboardModel.put("assets", AssetServiceImpl.getAssets().block());
+    dashboardModel.put("users", UserServiceImpl.getUserList());
 
     ModelAndView dashboardView = new ModelAndView("dashboard");
     dashboardView.addAllObjects(dashboardModel);
     return dashboardView;
   }
-
 }
