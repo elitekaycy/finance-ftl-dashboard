@@ -99,12 +99,14 @@
 .converter-container .currency-select .swap-icon {
   font-size: 20px;
   color: #333333;
+  padding-top: 20px;
 }
 .converter-container .conversion-result {
   background-color: #d4fecd;
   padding: 15px;
   border-radius: 5px;
   text-align: center;
+  margin-top: 10px;
 }
 .converter-container .conversion-result p {
   font-size: 16px;

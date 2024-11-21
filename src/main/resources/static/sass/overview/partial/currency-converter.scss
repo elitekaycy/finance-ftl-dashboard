@@ -82,6 +82,7 @@ $font-size-base: 16px;
     .swap-icon {
       font-size: 20px;
       color: $font-color;
+      padding-top: 20px;
     }
   }
 
@@ -91,6 +92,7 @@ $font-size-base: 16px;
     padding: 15px;
     border-radius: 5px;
     text-align: center;
+    margin-top: 10px;
 
     p {
       font-size: $font-size-base;
