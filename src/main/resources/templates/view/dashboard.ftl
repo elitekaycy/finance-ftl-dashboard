@@ -26,7 +26,8 @@
                     const body = await response.json();
                     if(body) {
                       console.log("body", body)
-                      output.innerHTML = "<p><strong>" + amount + " " + currencyFrom + " = " + (Number(amount) * Number(body.rates[currencyTo])) + "</strong></p>"+
+                      output.innerHTML = "<p><strong>" + amount + " " + currencyFrom + " = " + (Number(amount) * Number(body.rates[currencyTo])) +
+                              " " + currencyTo + "</strong></p>"+
                               "<span>Last updated at "+ body.date + "</span>";
                     }
 
